@@ -1,0 +1,49 @@
+ # Byte-compiled / optimized / DLL files
+  __pycache__/
+  *.py[cod]
+  *$py.class
+
+  # Distribution / packaging
+  .DS_Store
+  *.egg
+  *.whl
+  dist/
+  build/
+  develop-eggs/
+  eggs/
+  lib64/python/site-packages/
+  lib/python/site-packages/
+  lib/python/site-packages/
+  parts/
+  bin/
+  var/
+  sdist/
+  *.nvram
+
+  # Django stuff:
+  *.log
+  *.pot
+  *.sqlite3
+  local_settings.py
+
+  # Environments
+  .env
+  .venv
+  env/
+  venv/
+  ENV/
+  environment/
+  instance/
+  *.swp
+  *~
+  *#
+
+  # OS generated files
+  .DS_Store
+  Thumbs.db
+  [Tt]rash
+
+  # PyCharm
+  .idea/
+  *.iml
+  

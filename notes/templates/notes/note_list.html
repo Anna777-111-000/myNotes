@@ -1,0 +1,15 @@
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <h1>Список заметок</h1>
+    <a href="{% url 'note_create' %}" class="btn btn-primary">Создать новую заметку</a>
+    {% for note in notes %}
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ note.title }}</h5>
+                <p class="card-text">{{ note.content|truncatechars:100 }}</p>
+                <a href="{% url 'note_detail' note.pk %}" class="btn btn-primary">Подробнее</a>
+            </div>
+        </div>
+    {% endfor %}
+    {% endblock %}
